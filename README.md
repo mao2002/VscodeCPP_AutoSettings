@@ -1,9 +1,10 @@
 # VscodeC-_AutoSettings
-## vscode三步自动化配置C++单cpp编译环境
-#### 运行安装程序set_up.exe
-> 下载项目至本地后,运行安装程序set_up.exe,在安装程序中选择MinGW64安装路径(路径不能为中文),程序会自动安装并设置环境变量并配置好.vscode\*.json文件.
-#### 运行工作文件mymove.exe
-- 选择.vscode工作环境路径(非中文路径).
-- 在vscode打开包含.vscode的目录，即配置好了C++单cpp编译环境.
+## vscode三步自动化配置C++Cmake编译环境
+#### 运行安装程序set_cmake.exe
+> 下载项目至本地后,运行安装程序set_cmake.exe,在安装程序中选择MinGW64安装路径(路径不能为中文),然后弹出安装cmake的窗口,选择路径进行安装(路径不能为中文).
+#### 运行工作文件创建项目.exe
+- 选择项目工作环境路径(非中文路径).
+- 在vscode打开program的目录，即配置好了C++Cmake编译环境.
 #### 问题补充
-> 在使用C++终端运行功能中，输入中文，输出中文异常(其他功能无异常),将项目中的WindowsDebugLauncher.exe,替换掉'c:\Users\Lenovo\.vscode\extensions\ms-vscode.cpptools-1.7.1\debugAdapters\bin\WindowsDebugLauncher.exe'(这是我的路径，大概都类似是'C:\用户\用户名\.vscode\extensions\ms-vscode.cpptools-1.7.1\debugAdapters\bin\WindowsDebugLauncher.exe').
+- 中文乱码
+> 待解决
