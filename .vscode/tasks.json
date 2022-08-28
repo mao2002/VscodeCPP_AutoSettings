@@ -1,0 +1,52 @@
+{
+    "tasks": [
+        {
+            "type":"shell",
+            "label": "BeforeClean",
+            "command":"set exe_clc \"${fileDirname}\\${fileBasenameNoExtension}.exe\";if((Test-Path $exe_clc) -eq $true){rm -Force $exe_clc}",
+            "presentation": {
+                    "echo": false,
+                    "reveal": "never",
+                    "focus": false,
+                    "panel": "shared",
+                    "showReuseMessage": false,
+                    "clear": false
+                },
+        },
+        {
+            "type": "cppbuild",
+            "label": "g++.exe 生成活动文件",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-finput-charset=UTF-8",// 处理mingw中文编码问题
+                "-fexec-charset=GBK",   // 处理mingw中文编码问题
+                "-std=c++20",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "dependsOn":["BeforeClean"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}
