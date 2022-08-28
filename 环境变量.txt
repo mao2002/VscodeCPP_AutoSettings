@@ -1,0 +1,20 @@
+coderunner插件的设置，针对C\C++
+"code-runner.runInTerminal": true,
+"code-runner.executorMap": {
+"c": "cd $dir && gcc -fexec-charset=GBK -finput-charset=UTF-8 -std=c17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+"cpp": "cd $dir && g++ -fexec-charset=GBK -finput-charset=UTF-8 -std=c++20 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+},
+iorun插件的设置，针对C\C++
+"io-run.executorMap.win32": {
+        ".c": {
+            "PATH": "路径",
+            "compileCmd": "gcc -g -static -std=gnu11 -lm -Wfatal-errors ${codeFile} -o ${codeFileNoExt.exe}",
+            "runCmd": "${dirCodeFileNoExt.exe} <${inputFile} >${outputFile}",
+            "cleanupCmd": "del ${codeFileNoExt.exe}"
+        },
+        ".cpp": {
+            "PATH": "路径",
+            "compileCmd": "g++ -g -static -std=gnu++11 -Wfatal-errors ${codeFile} -o ${codeFileNoExt.exe}",
+            "runCmd": "${dirCodeFileNoExt.exe} <${inputFile} >${outputFile}",
+            "cleanupCmd": "del ${codeFileNoExt.exe}"
+        },
