@@ -19,3 +19,10 @@
 > 在使用C++终端运行功能中，输入中文，输出中文异常(其他功能无异常).
 - 解决方案
 > 将项目中的WindowsDebugLauncher.exe,替换掉'c:\Users\Lenovo\\.vscode\extensions\ms-vscode.cpptools-1.7.1\debugAdapters\bin\WindowsDebugLauncher.exe'(这是我的路径，大概都类似是'C:\用户\用户名\\.vscode\extensions\ms-vscode.cpptools-1.7.1\debugAdapters\bin\WindowsDebugLauncher.exe').
+
+
+<br />
+
+
+- 特别感谢
+> 特别感谢 https://github.com/imba-tjd/build-miengine/actions提供的WindowsDebugLauncher.exe,及时地解决了乱码问题.
