@@ -25,4 +25,4 @@
 
 
 - 特别感谢
-> 特别感谢 https://github.com/imba-tjd/build-miengine/actions提供的WindowsDebugLauncher.exe,及时地解决了乱码问题.
+> 特别感谢 https://github.com/imba-tjd/build-miengine/actions 的WindowsDebugLauncher.exe,及时地解决了乱码问题.
