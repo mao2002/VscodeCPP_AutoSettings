@@ -6,6 +6,11 @@
 - 选择.vscode工作环境路径(非中文路径).
 - 在vscode打开包含.vscode的目录，即配置好了C++单cpp编译环境.
 #### 问题补充及解决方案
+- 需要手动解决
+> 安装后不能编译运行程序(因环境变量需重启后才生效)
+- 解决方案
+> 重启下电脑
+
 > 在使用C++终端运行功能中，输入中文，输出中文异常(其他功能无异常).
 - 解决方案
 > 将项目中的WindowsDebugLauncher.exe,替换掉'c:\Users\Lenovo\\.vscode\extensions\ms-vscode.cpptools-1.7.1\debugAdapters\bin\WindowsDebugLauncher.exe'(这是我的路径，大概都类似是'C:\用户\用户名\\.vscode\extensions\ms-vscode.cpptools-1.7.1\debugAdapters\bin\WindowsDebugLauncher.exe').
