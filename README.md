@@ -24,7 +24,7 @@
 <br />
 
 
-#### coderrunnerC/C++插件配置
+#### coderunnerC/C++插件配置
 > 在环境变量txt中有较好的配置内容,可进行参考.
 
 
